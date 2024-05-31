@@ -1,0 +1,10 @@
+<%= react_component("items/show", {
+    item: @item.as_json(
+        only: [ :id, :name, :description, :price, :is_listed ],
+        include: [
+            :user => { :only => [:id, :name, :bio ] }
+        ]),
+        is_in_basket: @is_in_basket,
+        user_id: current_user&.id
+    },
+    { prerender: true }) %>

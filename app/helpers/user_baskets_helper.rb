@@ -1,0 +1,2 @@
+module UserBasketsHelper
+end

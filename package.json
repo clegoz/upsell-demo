@@ -1,0 +1,61 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.1.0",
+  "babel": {
+    "presets": [
+      "./node_modules/shakapacker/package/babel/preset.js",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": true
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@ant-design/static-style-extract": "^1.0.2",
+    "@babel/core": "^7.24.6",
+    "@babel/plugin-transform-runtime": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "@babel/runtime": "^7.24.6",
+    "@types/babel__core": "^7.20.5",
+    "@types/webpack": "^5.28.5",
+    "antd": "^5.17.3",
+    "babel-loader": "^8.3.0",
+    "babel-plugin-import": "^1.13.8",
+    "big.js": "^6.2.1",
+    "compression-webpack-plugin": "^9.2.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react_ujs": "^3.2.1",
+    "shakapacker": "8.0.0",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-assets-manifest": "^5.2.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.10.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.15.2"
+  },
+  "packageManager": "yarn@4.2.2"
+}
